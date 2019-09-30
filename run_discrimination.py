@@ -127,7 +127,7 @@ def _flatten_and_tokenize_metadata(encoder, item):
     :return: dict
     """
     metadata = []
-    for key in ['domain', 'date', 'authors', 'title', 'article']:
+    for key in ['domain', 'publish_date', 'authors', 'title', 'text']:
         val = item.get(key, None)
         if val is not None:
             metadata.append(encoder.__dict__[f'begin_{key}'])
