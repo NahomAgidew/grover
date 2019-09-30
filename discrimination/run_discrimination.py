@@ -18,6 +18,9 @@ For discrimination finetuning (e.g. saying whether or not the generation is huma
 """
 import json
 import os
+import sys
+
+sys.path.insert(0, os.getcwd() + '/../')
 
 import numpy as np
 import tensorflow as tf
